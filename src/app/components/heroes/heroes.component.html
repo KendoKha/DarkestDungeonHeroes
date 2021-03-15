@@ -1,0 +1,19 @@
+<div class="container container-fluid bg-dark">
+<h1 class="text-danger">Héroes</h1>
+<hr>
+
+<div class="row row-cols-1 row-cols-md-3 g-4s animated fadeIn">
+    <div class="col" *ngFor="let heroe of heroes; let i = index">
+        <div class="card border-danger">
+          <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+          <div class="card-body bg-dark">
+            <h5 class="card-title text-danger">{{ heroe.nombre }}</h5>
+            <p class="card-text text-danger">{{ heroe.bio }}</p>
+            <button class="btn btn-outline-danger" [routerLink]="['/heroe',i]">Ver más...</button>
+          </div>
+        </div>
+      </div>
+
+      
+</div>
+</div>

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Practicando2"
+    }
+  },
+  "defaultProject": "Practicando2",
+  "cli": {
+    "analytics": false
+  }
 }
